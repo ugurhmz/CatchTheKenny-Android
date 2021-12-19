@@ -34,8 +34,8 @@
     -  [x] new CountDownTimer( kaçtan_Başlasın ms, SaymaAralığı ms)
         -   [x]  onTick()  -> Başlangıç time
         -   [x]  onFinish()  -> Bitiş time
-</br>
 
+</br>
 ## 5. Kenny'i hareket ettir.
 - [x] 9 tane ImageView Global olarak tanımla.
 - [x] onCreate() metounda 9 tanesini initialize et. findViewById ile
@@ -45,7 +45,7 @@
 - [x]  hideImages() adlı metod oluştur.Açılır, açılmaz saklanması için onCreate() te başlat.
    -   [x] hideImages altındaki her bir image'yi visible et.
 </br>
-## 5. Her saniyede bir Kenny'lerden birini göster
+## 6. Her saniyede bir Kenny'lerden birini göster
 - [x] Runnable Kullanacağız 
    -  [x] Herhangi bir Image'ı açabilir/kapayabilir. Herhangi bir işlemi belli periyotlarda yapabiliriz Runnable & handler
 - [x] Global -> Handler ve Runnable tanımla
@@ -55,19 +55,15 @@
        -  [x] handler.post() -> Runnable bittekten sonra tanımlanır ve başlatır onu.
 
 </br>
-## 6. Oyunu Bitir.
+## 7. Oyunu Bitir.
 - [x] CountDownTimer içindeki
    -  [x] onFinish() -> bitince yapacaklarımız
        -  [x] setText time off yaz
-       -  
        -  [x] removeCallback yap runnable
-       -  
        -  [x] Loop'ta tüm, resimleri invisible yap.
-       -  
        -  [x] Alert çıkar
            -  [x] setTitle ver.
            -  [x] Oyun devam etsinmi sor?
-           -  
                -  [x] positiv, negative button koy.
                    -  [x] yes ise  ->  restart
                    -  [x] no ise  ->  Toast 
