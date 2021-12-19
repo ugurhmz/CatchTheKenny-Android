@@ -45,3 +45,15 @@
 - [x]  hideImages() adlı metod oluştur.Açılır, açılmaz saklanması için onCreate() te başlat.
    -   [x] hideImages altındaki her bir image'yi visible et.
 
+## 5. Her saniyede bir Kenny'lerden birini göster
+- [x] Runnable Kullanacağız 
+   -  [x] Herhangi bir Image'ı açabilir/kapayabilir. Herhangi bir işlemi belli periyotlarda yapabiliriz Runnable & handler
+- [x] Global -> Handler ve Runnable tanımla
+- [x] hideImages() 
+   -  [x] Handler() ve Runnable() kullan.
+       -  [x] handler.postDelayed() -> Söylediğim periyotta çalıştır demek.
+       -  [x] handler.post() -> Runnable bittekten sonra tanımlanır ve başlatır onu.
+
+
+## 6. Oyunu Bitir.
+- [x] Runnable Kullanacağız 

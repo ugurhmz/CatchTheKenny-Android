@@ -2,11 +2,14 @@ package com.ugurhmz.catchkenny;
 
 import android.os.Bundle;
 import android.os.CountDownTimer;
+import android.os.Handler;
 import android.view.View;
 import android.widget.ImageView;
 import android.widget.TextView;
 
 import androidx.appcompat.app.AppCompatActivity;
+
+import java.util.Random;
 
 
 public class MainActivity extends AppCompatActivity {
@@ -25,6 +28,8 @@ public class MainActivity extends AppCompatActivity {
     ImageView imageView8;
     ImageView imageView9;
     ImageView[] imageArray;
+    Handler handler;
+    Runnable runnable;
 
 
 
@@ -77,9 +82,26 @@ public class MainActivity extends AppCompatActivity {
 
     // Hide Images
     public void hideImages(){
-        for(ImageView image : imageArray){
-            image.setVisibility(View.INVISIBLE);
-        }
-    }
 
+        handler = new Handler();
+
+        runnable = new Runnable() {
+            @Override
+            public void run() {
+                for(ImageView image : imageArray){
+                    image.setVisibility(View.INVISIBLE);
+                }
+
+                //random generate
+                Random random = new Random();
+                int randNumber = random.nextInt(9); // 0 & 8' dahil üret.
+                imageArray[randNumber].setVisibility(View.VISIBLE);
+
+                handler.postDelayed(this, 370);
+            }
+        };
+
+        handler.post(runnable);
+
+    }
 }
