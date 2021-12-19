@@ -56,4 +56,15 @@
 
 
 ## 6. Oyunu Bitir.
-- [x] Runnable Kullanacağız 
+- [x] CountDownTimer içindeki
+   -  [x] onFinish() -> bitince yapacaklarımız
+       -  [x] setText time off yaz
+       -  [x] removeCallback yap runnable
+       -  [x] Loop'ta tüm, resimleri invisible yap.
+       -  [x] Alert çıkar
+           -  [x] setTitle ver.
+           -  [x] Oyun devam etsinmi sor?
+               -  [x] positiv, negative button koy.
+                   -  [x] yes ise  ->  restart
+                   -  [x] no ise  ->  Toast 
+            
